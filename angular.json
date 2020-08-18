@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "reachus-portal"
+  "defaultProject": "reachus-portal",
+  "cli": {
+    "analytics": "82cb99c0-3124-4f89-a1f9-7966bbdd9c35"
+  }
 }
