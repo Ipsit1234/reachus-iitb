@@ -24,7 +24,7 @@ import { CategoryCardComponent } from './categories/category-card/category-card.
 import { CategoryCreateComponent } from './categories/category-create/category-create.component';
 import { CreateOfferComponent } from './offers/create-offer/create-offer.component';
 import { OfferCardComponent } from './offers/offer-card/offer-card.component';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { FooterComponent } from './footer/footer.component';

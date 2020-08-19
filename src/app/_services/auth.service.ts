@@ -21,6 +21,7 @@ export class AuthService {
       {code: code})
       .pipe(
         map(result => {
+          console.log(result);
           localStorage.setItem('user', JSON.stringify(result['user']));
           return true;
         })
@@ -46,13 +47,14 @@ export class AuthService {
   public isAuthenticated(): Boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     const token = user ? JSON.parse(localStorage.getItem('user')).token : '';
-
     return !this.jwtHelper.isTokenExpired(token);
+    /* will be removed while deploying*/
+    // return true;
   }
 
   public get isAdmin(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
-    
+
     if (user) {
       return user.admin;
     }

@@ -11,8 +11,8 @@ import { CategoryOffersComponent } from './offers/category-offers/category-offer
 import { EditOfferComponent } from './offers/edit-offer/edit-offer.component';
 
 const routes: Routes = [
-  { 
-    path: '', 
+  {
+    path: '',
     component: HomeComponent,
     data: {
       title: 'Home',
@@ -21,10 +21,10 @@ const routes: Routes = [
         keywords: 'reachus, iitb'
       }
     }
-  
+
   },
-  { 
-    path: 'login', 
+  {
+    path: 'login',
     component: LoginComponent,
     data: {
       title: 'Login',
@@ -32,11 +32,11 @@ const routes: Routes = [
         desciption: 'ReachUs Portal',
         keywords: 'reachus, iitb'
       }
-    } 
+    }
   },
-  { 
-    path: 'offers', 
-    component: OffersComponent, 
+  {
+    path: 'offers',
+    component: OffersComponent,
     canActivate: [AuthGuard],
     data: {
       title: 'Offers',
@@ -47,8 +47,8 @@ const routes: Routes = [
     }
   },
   {
-    path: 'offers/:category', 
-    component: CategoryOffersComponent, 
+    path: 'offers/:category',
+    component: CategoryOffersComponent,
     canActivate: [AuthGuard],
     data: {
       title: 'Offers',
@@ -59,8 +59,8 @@ const routes: Routes = [
     }
   },
   {
-    path: 'offers/edit/:id', 
-    component: EditOfferComponent, 
+    path: 'offers/edit/:id',
+    component: EditOfferComponent,
     canActivate: [AuthGuard],
     data: {
       title: 'Edit Offer',

@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiBaseUrl: 'http://localhost:3000/portal/reachus/api',
+  // apiBaseUrl: 'https://6eae78d9-b888-4f18-8d8f-f152715284fa.mock.pstmn.io',
   loginUrl: 'https://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=uIkqcEZdLGkRdIqrSVMLE0Gt3qaS73ClwoQF260A&response_type=code&scope=profile%20ldap%20send_mail'
 };
 
